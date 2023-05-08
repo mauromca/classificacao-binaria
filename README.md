@@ -14,15 +14,14 @@
 
 **Em resumo**, o algoritmo de classificação binária usando o conjunto de dados de câncer de mama ilustra uma aplicação prática de aprendizado de máquina em um problema real. A biblioteca Scikit-Learn oferece muitas funções e algoritmos úteis para a análise de dados, e o conjunto de dados de câncer de mama é uma fonte valiosa para o desenvolvimento e teste de algoritmos de classificação binária.
 
-### Segue abaixo a lista das etapas realizadas no algoritmo de classificação binária utilizando SVM:
+Lista de Processos:
 
-1. Importação da biblioteca Scikit-Learn do Python.
-2. Carregamento do dataset Breast Cancer.
-3. Definição das variáveis X e y, onde X é um array com as informações das características das células cancerosas e y é um array com as informações sobre a natureza do tumor (benigno ou maligno).
-4. Divisão dos dados em conjuntos de treinamento e teste, utilizando a função train_test_split da biblioteca Scikit-Learn.
-5. Importação da classe SVC (Support Vector Classification) da biblioteca Scikit-Learn.
-6. Criação de um objeto model da classe SVC com kernel linear.
-7. Treinamento do modelo com os dados de treinamento utilizando o método fit.
-8. Utilização do modelo treinado para fazer previsões em dados de teste, utilizando o método predict.
-9. Cálculo da acurácia do modelo, utilizando a função accuracy_score da biblioteca Scikit-Learn.
-10. Impressão do valor da acurácia.
+1. **Importação das bibliotecas** necessárias (load_breast_cancer, train_test_split, SVC e accuracy_score) através do comando "from sklearn".
+2. **Carregamento dos dados** de câncer de mama através do comando "load_breast_cancer()" e armazenamento na variável "dados".
+3. **Definição das features** (X) e dos rótulos (y) através das propriedades "data" e "target" da variável "dados".
+4. **Separação dos dados** em conjuntos de treinamento e teste (X_train, X_test, y_train e y_test) utilizando a função "train_test_split". A separação é feita de forma aleatória, com 20% dos dados reservados para teste.
+5. **Criação de um modelo SVM** com kernel linear através do comando "SVC(kernel='linear')", armazenando na variável "model".
+6. **Treinamento do modelo** com o conjunto de treinamento através do comando "model.fit(X_train, y_train)".
+7. **Realização da predição** dos rótulos de teste através do comando "model.predict(X_test)" e armazenamento na variável "y_pred".
+8. **Cálculo da acurácia** do modelo utilizando a função "accuracy_score(y_test, y_pred)" e armazenamento na variável "accuracy".
+9. **Impressão da acurácia** na tela utilizando o comando "print(f'Acurácia: {accuracy:.2f}')".
