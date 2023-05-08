@@ -4,11 +4,11 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 
 # Carrega os dados de câncer de mama
-data = load_breast_cancer()
+dados = load_breast_cancer()
 
 # Define as features e os rótulos
-X = data.data
-y = data.target
+X = dados.data
+y = dados.target
 
 # Separa os dados em treinamento e teste
 X_train, X_test, y_train, y_test = train_test_split(
