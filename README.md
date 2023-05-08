@@ -13,3 +13,16 @@
 **Finalmente, usamos o modelo treinado para fazer previsões** em um conjunto de dados de teste separado e avaliamos a precisão do modelo usando a métrica de acurácia.
 
 **Em resumo**, o algoritmo de classificação binária usando o conjunto de dados de câncer de mama ilustra uma aplicação prática de aprendizado de máquina em um problema real. A biblioteca Scikit-Learn oferece muitas funções e algoritmos úteis para a análise de dados, e o conjunto de dados de câncer de mama é uma fonte valiosa para o desenvolvimento e teste de algoritmos de classificação binária.
+
+### Segue abaixo a lista das etapas realizadas no algoritmo de classificação binária utilizando SVM:
+
+1. Importação da biblioteca Scikit-Learn do Python.
+2. Carregamento do dataset Breast Cancer.
+3. Definição das variáveis X e y, onde X é um array com as informações das características das células cancerosas e y é um array com as informações sobre a natureza do tumor (benigno ou maligno).
+4. Divisão dos dados em conjuntos de treinamento e teste, utilizando a função train_test_split da biblioteca Scikit-Learn.
+5. Importação da classe SVC (Support Vector Classification) da biblioteca Scikit-Learn.
+6. Criação de um objeto model da classe SVC com kernel linear.
+7. Treinamento do modelo com os dados de treinamento utilizando o método fit.
+8. Utilização do modelo treinado para fazer previsões em dados de teste, utilizando o método predict.
+9. Cálculo da acurácia do modelo, utilizando a função accuracy_score da biblioteca Scikit-Learn.
+10. Impressão do valor da acurácia.
